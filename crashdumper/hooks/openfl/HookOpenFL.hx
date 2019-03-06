@@ -84,6 +84,7 @@ class HookOpenFL implements IHookPlatform
 					case PATH_DESKTOP: str = SystemPath.desktopDirectory;
 					case PATH_USERPROFILE: str = SystemPath.userDirectory;
 					case PATH_APP: str = SystemPath.applicationDirectory;
+					default: str = SystemPath.applicationStorageDirectory;
 				}
 			#end
 			if (str != "")
